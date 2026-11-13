@@ -32,6 +32,9 @@ export default function Navbar(props) {
               <li className="nav-item">
               <Link className="nav-link" to="/about">{props.aboutText}</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">Contact Us</Link>
+              </li>
               <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" to="/">User</Link>
                 <ul className="dropdown-menu">

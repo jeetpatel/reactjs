@@ -7,6 +7,8 @@ import TextForm from './components/TextForm';
 import Auth from './components/Auth';
 import Login from './components/Login';
 import Register from './components/Register';
+import ContactUs from './components/ContactUs';
+import ContactSuccess from './components/ContactSuccess';
 import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
@@ -76,6 +78,8 @@ function App() {
           <Routes>
             <Route path="/" element={<TextForm heading="Text Analyzer" mode={mode} btnText={btnText} showAlert={showAlert} />} />
             <Route path="/about" element={<About mode={mode} btnText={btnText} toggleMode={toggleMode} />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/contact-success" element={<ContactSuccess />} />
             <Route path="auth" element={<Auth />}>
               <Route path="login" element={<Login />} />
               <Route path="register" element={<Register />} />
